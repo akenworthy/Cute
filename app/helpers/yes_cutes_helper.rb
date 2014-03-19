@@ -1,0 +1,2 @@
+module YesCutesHelper
+end

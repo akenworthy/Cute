@@ -1,0 +1,27 @@
+<div class="container">
+<div class="page-header">
+  <h1 align="middle">Yes Cute! <small>The cutest animal pictures in the world</small></h1>
+   <div align="middle"><%= link_to 'Add to the collection', new_yes_cute_path, :class => "btn btn-default" %><div>
+</div>
+     <br><br>
+  <tbody>
+    <% @yes_cutes.each do |yes_cute| %>
+      <div class="row">
+  <div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="thumbnail">
+      <img src="<%=yes_cute.image_url%>" width = 300 alt="...">
+      <div class="caption">
+        <h3><%= yes_cute.Animal %></h3>
+        <p><strong>Cuteness level:</strong> <%=yes_cute.cuteness_level%></p>
+        <p><%= link_to 'Edit', edit_yes_cute_path(yes_cute), :class => "btn btn-primary" %>
+          <%= link_to 'More Info', yes_cute, :class => "btn btn-primary" %>
+          <%= link_to 'Exterminate', yes_cute, :class => "btn btn-primary", method: :delete, data: { confirm: 'Are you sure you want to exterminate this cute little thing?' } %></p>
+      </div>
+    </div>
+  </div>
+<% end %>
+</div>
+    
+  </tbody>
+<div>
+  

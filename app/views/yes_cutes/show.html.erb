@@ -1,0 +1,28 @@
+
+
+
+
+
+<p id="notice"><%= notice %></p>
+<img src="<%= @yes_cute.image_url %>">
+<p>
+  <strong>Animal:</strong>
+  <%= @yes_cute.Animal %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <img src= <%= @yes_cute.image_url %>>
+</p>
+
+<p>
+  <strong>Cuteness level:</strong>
+  <%= @yes_cute.cuteness_level %>
+</p>
+
+
+
+
+
+<%= link_to 'Edit', edit_yes_cute_path(@yes_cute) %> |
+<%= link_to 'Back', yes_cutes_path %>

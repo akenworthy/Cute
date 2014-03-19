@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Animal: MyString
+  image_url: MyString
+  cuteness_level: 1.5
+
+two:
+  Animal: MyString
+  image_url: MyString
+  cuteness_level: 1.5
